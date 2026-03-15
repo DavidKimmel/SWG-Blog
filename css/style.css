@@ -469,6 +469,56 @@ ul, ol {
   margin: var(--space-md) 0;
 }
 
+.infographic {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: var(--space-md) auto;
+  border-radius: var(--cream-panel-radius);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  cursor: zoom-in;
+  transition: opacity 0.2s ease;
+}
+
+.infographic:hover {
+  opacity: 0.9;
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.9);
+  cursor: zoom-out;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.lightbox--open {
+  display: flex;
+}
+
+.lightbox__img {
+  max-width: 95vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.lightbox__close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  line-height: 1;
+}
+
 .footer {
   text-align: center;
   padding: var(--space-xl) var(--space-md);
