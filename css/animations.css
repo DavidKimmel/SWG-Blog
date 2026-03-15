@@ -57,7 +57,7 @@
 }
 
 .hero__scroll {
-  animation: fadeUp 0.8s ease forwards, gentleBounce 2s ease-in-out 1.5s infinite;
+  animation: fadeUp 0.8s ease 1.2s forwards, gentleBounce 2s ease-in-out 2.7s infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
